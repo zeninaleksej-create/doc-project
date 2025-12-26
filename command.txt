@@ -1,0 +1,12 @@
+    1  mkdir doc-project
+    2  cd doc-project
+    3  cd doc-project
+    4  git init
+    5  echo -e "Проект: doc-project\nАвтор: Ваше Имя" > README.txt
+    6  echo -e "Заметка 1: Начать документацию\nЗаметка 2: Проверить зависимости\nЗаметка 3: Настроить окружение" > notes.txt
+    7  git add .
+    8  git commit -m "Инициализация"
+    9  git remote add origin https://github.com/zeninaleksej-create/doc-project.git
+   10  git branch -M main
+   11  git push -u origin main
+   12  history > command.txt
