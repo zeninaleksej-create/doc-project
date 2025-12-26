@@ -10,3 +10,44 @@
    10  git branch -M main
    11  git push -u origin main
    12  history > command.txt
+   13  git add .
+   14  git commit -m "Commands"
+   15  git push
+   16  git add README.txt
+   17  git commit -m "Remove test line from README"
+   18  git push origin main
+   19  git add notes.txt
+   20  git commit -m "update notes.txt"
+   21  git commit --amend
+   22  git push origin main
+   23  echo '
+Следующие шаги:
+- Подключить базу данных.
+- Оптимизировать производительность.' >> notes.txt
+   24  cat << EOF > todo.txt
+Задачи на неделю:
+- Завершить интеграцию API
+- Подготовить отчет по нагрузочному тестированию
+- Обсудить требования с заказчиком
+EOF
+
+   25  git stash save
+   26  git add todo.txt
+   27  git commit -m "Добавлен файл"
+   28  git stash apply
+   29  echo "my_secret_password" > secret.txt
+   30  echo "secret.txt" > .gitignore
+   31  git status
+   32  touch app.log
+   33  touch debug.log
+   34  echo "*.log" > .gitignore
+   35  git status
+   36  echo "\nProject version: 1.0" >> README.txt
+   37  git add README.txt
+   38  git commit -m "Added info"
+   39  git reset HEAD~1
+   40  echo "Some change" >> another_file.txt
+   41  git add README.txt another_file.txt
+   42  git commit -m "Updates"
+   43  git push origin main
+   44  history > command.txt
